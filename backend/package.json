@@ -1,0 +1,22 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "proxyServer.js",
+    "author": "Sameer Verma",
+    "description": "Server to respond to client",
+    "scripts": {
+        "dev": "nodemon",
+        "start": "concurrently \"node proxyServer\" \"node middlewareServer\" \"node apiServer\""
+    },
+    "dependencies": {
+        "axios": "^0.26.1",
+        "concurrently": "^8.0.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "http-proxy": "^1.18.1",
+        "pg": "^8.7.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
